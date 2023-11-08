@@ -14,23 +14,26 @@ body {
 
 
 
-.header{
+header{
     background-color: #EAC926;
+    padding: 10px;
 }
 
 .logo{
-    width: 50%;
+    width: 45%;
+    margin: 5px;
 }
 
 .input-button{
-    width: 30%;
+    width: 45%;
+    margin: 5px;
 }
 
 input{
-    flex: 1;
     padding: 10px;
     border: none;
     outline: none;
+    width: 60%;
 }
 
 .button{
@@ -43,6 +46,7 @@ input{
 
 .comprar{
     text-align: center;
+    margin: 20px;
 }
 
 .nav_bar{
@@ -50,11 +54,25 @@ input{
     margin-bottom: 20px;
 }
 
+.nav_barra-1{
+    display: flex;
+    width: 45%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.nav_barra-2{
+    display: flex;
+    flex-wrap: wrap;
+    width: 45%;
+    justify-content: space-around;
+}
+
 .contenedor-logo{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-
+    justify-content: space-around;
+    align-items: center;
 }
 
 .contenedor-burger {
@@ -91,7 +109,7 @@ main {
 }
 
 .imagen-banner {
-    width: 100vw;
+    width: 100%;
     margin-bottom: 0px;
 }
 
@@ -112,7 +130,7 @@ main {
 }
 
 .contenedor-producto{
-    border-top: #ededed 1px solid;
+    border-top: hsl(0, 0%, 93%) 1px solid;
     padding: 15px;
     
 }
@@ -208,13 +226,35 @@ footer{
     }
     .nav_bar{
         display: block;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
     }
     .contenedor-productos{
-        width: 45%;
         display: flex;
+        justify-content: space-around;
+    }
+    .comprar{
+        width: 30%;
+    }
+    .logo{
+        width: 30%;
+    }
+    .input-button{
+        width: 30%;
+    }
+    .producto{
+        width: 45%;
+        margin: 10px;
+    }
+    .titulares{
+        text-align: left;
+        margin: 20px;
     }
 }
 
 @media (min-width: 1024px) {
-
+    .producto{
+        width: 20%;
+    }
 }
