@@ -140,7 +140,7 @@ header{
 
 .input-text{
     border: none;
-    color: #ebebeb;
+    color: black;
     border-radius: 4px;
     font-size: 11px;
     height: 25px;
@@ -156,6 +156,11 @@ header{
     border-radius: 4px;
     height: 35px;
     border: none;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: #0022AA;
 }
 
 

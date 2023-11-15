@@ -43,7 +43,7 @@ header{
 
 input{
     border: none;
-    color: #ebebeb;
+    color: black;
     border-radius: 4px 0px 0px 4px;
     font-size: 11px;
     height: 25px;
@@ -147,23 +147,26 @@ main {
     font-size: 24px;
     text-align: center;
     color: #666;
+    margin: 20px;
 }
 
 .contenedor-productos{
     display: flex;
     flex-wrap: wrap;
+    align-items: baseline;
+    transition: all 2s;
 }
 
 .producto{
     background-color:white;
     margin: 5px 0px;
-
+    transition: all 1s;
 }
 
 .contenedor-producto{
     border-top: hsl(0, 0%, 93%) 1px solid;
     padding: 15px;
-    
+    transition: all 2s;
 }
 
 .icon-producto{
@@ -173,6 +176,7 @@ main {
     border-radius: 20px;
     padding: 10px;
     margin-left: 15px;
+    transition: all 1s;
 }
 
 .contenedor-producto > .icon-producto{
@@ -191,6 +195,8 @@ main {
 
 .contenedor-producto{
     position: relative;
+    transition: all 5s;
+   
 }
 
 .precios{
@@ -214,6 +220,11 @@ main {
     color: #666;
     display: none;
     cursor: pointer;
+    transition: all 5s;
+}
+
+.producto:hover .descripciones{
+    display: block;
 }
 
 .icon-producto:hover {
@@ -249,6 +260,7 @@ footer{
     font-size: 2em;
     margin: auto;
     cursor: pointer;
+    transition: all 1s;
 }
 
 .icon-footer:hover{
@@ -292,7 +304,7 @@ h4{
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
     
-    .descripciones:hover{
+    .descripciones{
         display: block;
     }
 
@@ -331,6 +343,13 @@ h4{
 @media (min-width: 1024px) {
     .producto{
         width: 20%;
+        box-shadow: none;
+        cursor: pointer;
+        transition: all 1s;
+    }
+
+    .producto:hover{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
 
     .img-logo{
@@ -345,7 +364,11 @@ h4{
         padding: 10px;
     }
 
-    .descripciones:hover{
+    .descripciones{
+        display: none;
+    }
+
+    .producto:hover .descripciones{
         display: block;
     }
 
