@@ -55,7 +55,7 @@ header{
     height: 25px;
     width: 80%;
     padding: 20px;
-
+    outline: none;
 
 }
 
@@ -79,7 +79,7 @@ header{
 .nav_bar{
     display: none;
     margin-bottom: 20px;
-    font-size: 13px;
+    font-size: 16px;
 }
 
 .nav_barra-1{
@@ -164,6 +164,7 @@ header{
     width: 100%;
     padding: 20px;
     margin-bottom: 20px;
+    outline: none;
 }
 
 .input-date{
@@ -174,6 +175,7 @@ header{
     width: 100%;
     padding: 20px;
     margin-bottom: 20px;
+    outline: none;
 }
 
 .form-titulos{
@@ -203,6 +205,7 @@ header{
     border: none;
     margin-bottom: 20px;
     cursor: pointer;
+    transition: all 1s;
 }
 
 .btn:hover{
@@ -265,6 +268,7 @@ footer{
     font-size: 2em;
     margin: auto;
     cursor: pointer;
+    transition: all 1s;
 }
 
 .icon-footer:hover{
@@ -325,7 +329,7 @@ h4{
 @media (min-width: 1024px) {
  
     .img-logo{
-        width: 70%;
+        width: 90%;
     }
     .seccion-footer{
         width: 30%;

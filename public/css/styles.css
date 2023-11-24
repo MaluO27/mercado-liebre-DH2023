@@ -73,7 +73,7 @@ input{
 .nav_bar{
     display: none;
     margin-bottom: 20px;
-    font-size: 13px;
+    font-size: 16px;
 }
 
 .nav_barra-1{
@@ -167,6 +167,7 @@ main {
     border-top: hsl(0, 0%, 93%) 1px solid;
     padding: 15px;
     transition: all 2s;
+    height: 120px;
 }
 
 .icon-producto{
@@ -211,16 +212,17 @@ main {
     margin-top: 5px;
     margin-bottom: 5px;
     cursor: pointer;
+    transition: all 1s;
 }
 
 .descripciones{
     font-size: 16px;
-    margin-top: 25px;
+    margin-top: 15px;
     margin-bottom: 5px;
     color: #666;
     display: none;
     cursor: pointer;
-    transition: all 5s;
+    transition: all 2s;
 }
 
 .producto:hover .descripciones{
@@ -353,7 +355,7 @@ h4{
     }
 
     .img-logo{
-        width: 70%;
+        width: 90%;
     }
     .seccion-footer{
         width: 30%;

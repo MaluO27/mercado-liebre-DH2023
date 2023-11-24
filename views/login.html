@@ -63,16 +63,21 @@ rel="stylesheet" />
 <main>
 
     <div class="formulario">
-<form class="form-login" action="/login" method="post">
+<form class="form-login" action="/" method="GET">
 <lebel for="Nombre de Usuario"></lebel>
-<input class="input-text" type="text" placeholder="Nombre de Usuario" Name="Nombre de Usuario" id="Nombre de Usuario"><br>
+<input class="input-text" type="text" placeholder="Nombre de Usuario" Name="Nombre de Usuario" id="Nombre de Usuario" minlength="7" required><br>
+<span id="Error Nombre de Usuario" class="error-message"></span>
+
 
 <br>
 <level for="Contraseña"></level>
-<input class="input-text" type="password" placeholder="Contraseña" name="Contraseña" id="Contraseña"><br>
+<input class="input-text" type="password" placeholder="Contraseña" name="Contraseña" id="Contraseña" minlength="9" required><br>
+<span id="Error Contraseña" class="error-message"></span>
+
 
 <br>
-<button class="btn" type="submit">Enviar</button>
+<button class="btn" value="Enviar">Enviar</button>
+
 </form>
     </div>
 </main>

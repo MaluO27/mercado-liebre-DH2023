@@ -68,26 +68,35 @@ rel="stylesheet" />
 
 <main>
 <div class="formulario">
-    <form action="/register" method="post" class="form-register">
+    <form action="/" method="GET" class="form-register">
 <lebel for="Nombre y Apellido"></lebel>
 <input class="input-text" type="text" placeholder="Nombre y Apellido" name="Nombre y Apellido" id="Nombre y Apellido" required><br>
-<span></span>
+<span id="Error Nombre y Apellido" class="error-message"></span>
+
 <br>
 <lebel for="Nombre de Usuario"></lebel>
-<input class="input-text" type="text" placeholder="Nombre de Usuario" Name="Nombre de Usuario" id="Nombre de Usuario" required><br>
+<input class="input-text" type="text" placeholder="Nombre de Usuario" Name="Nombre de Usuario" id="Nombre de Usuario" minlength="7" required><br>
+<span id="Error Nombre de Usuario" class="error-message"></span>
+
 
 <br>
 <lebel for="Email"></lebel>
 <input class="input-text" type="email" placeholder="E-mail" name="Email" id="Email" required><br>
+<span id="Error Email" class="error-message"></span>
+
 
 <br>
 <h4 class="form-titulos">Fecha de Nacimiento</h4>
 <lebel for="Fecha"></lebel>
 <input class="input-date" type="date" name="Fecha" id="Fecha" required><br>
+<span id="Error Fecha de Nacimiento" class="error-message"></span>
+
 
 <br>
 <lebel for="Domicilio"></lebel>
 <input class="input-text" type="text" placeholder="Domicilio" name="Domicilio" id="Domicilio" required>
+<span id="Error Domicilio" class="error-message"></span>
+
 
 <h4 class="form-titulos">Perfil de Usuario</h4>
 <div class="radio">
@@ -129,14 +138,18 @@ rel="stylesheet" />
 </div>
 <br>
 <level for="Contraseña"></level>
-<input class="input-text" type="password" placeholder="Contraseña" name="Contraseña" id="Contraseña" required><br>
+<input class="input-text" type="password" placeholder="Contraseña" name="Contraseña" id="Contraseña" minlength="9" required><br>
+<span id="Error Contraseña" class="error-message"></span>
+
 
 <br>
 <level for="Confirmar Contraseña"></level>
-<input class="input-text" type="password" placeholder="Confirmar Contraseña" name=" Confirmar Contraseña" id="Confirmar Contraseña" required><br>
+<input class="input-text" type="password" placeholder="Confirmar Contraseña" name=" Confirmar Contraseña" id="Confirmar Contraseña" minlength="9" required><br>
+<span id="Error Contraseña" class="error-message"></span>
+
 
 <br>
-<button class="btn" type="submit">Enviar</button>
+<button class="btn" type="submit" value="Enviar">Enviar</button>
 <button class="btn" type="reset">Borrar</button>
 
     </form>
